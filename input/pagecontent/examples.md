@@ -1,14 +1,13 @@
+<p class="dragon"><strong>THESE ARE VERY EARLY DRAFTS</strong> THIS IS NOT AN AUTHORIZED PUBLICATION</p>
+
 ### CapabilityStatement
 
-* [Apotti CapabilityStatement](CapabilityStatement-apotti-eko01.html), an
-  example capability statement captured from Apotti's ecosystem environment.
+* [Example IPA Server CapabilityStatement](CapabilityStatement-example-ipa-server.html), an
+  example capability statement captured from an example service supporting IPA in danish context.
 
 ### Launch Sequence
 
-* [Apotti EHR Launch by a Practitioner](AuditEvent-apotti-ehr-launch-by-practitioner.html), an
-  example data flow when an app is launched from an EHR system. Note that the AuditEvent resource
-  instance has minimal content. Most of the content of the example is in the human readable
-  introductory part of the example page.
+* [See examples Launches here](https://www.hl7.org/fhir/smart-app-launch/examples.html).
 
 <p class="dragon"><strong>Please do not implement the SMART App Launch mechanism based on
   examples!</strong> Examples in this implementation guide are meant to offer additional clarity on

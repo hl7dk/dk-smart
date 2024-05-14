@@ -1,6 +1,8 @@
-### Welcome to the Finnish SMART App Launch Specification
+<p class="dragon"><strong>THESE ARE VERY EARLY DRAFTS</strong> THIS IS NOT AN AUTHORIZED PUBLICATION</p>
 
-This is the Finnish implementation guide for the SMART App Launch mechanism.
+### Welcome to the Danish SMART App Launch Specification
+
+This is the Danish implementation guide for the SMART App Launch mechanism.
 
 {% include cross-version-analysis-inline.xhtml %}
 
@@ -30,7 +32,7 @@ In addition to launching apps, the main SMART specification defines a
 #### Companion Specifications
 
 There is a separate implementation guide for
-[Finnish Base Profiles](https://hl7.fi/fhir/finnish-base-profiles/) that defines the Finnish base
+[Danish Core Profiles](https://hl7.dk/fhir/core/) that defines the Danish Core
 profiles for some of the key FHIR resources.
 
 ### Why Do We Need to Profile the SMART Specification?
@@ -44,47 +46,15 @@ implementation feedom but may be tricky for app developers to support. In this i
 guide, we aim to provide clarity on topics like how an app best learns the organization or
 organization unit the practitioner launching the app works for (when launching the app).
 
-We believe we can get some of these details sorted out more efficiently in the local Finnish
+We believe we can get some of these details sorted out more efficiently in the local Danish
 context. We still aim to feed our learnings and developments with the wider SMART community and
 help get parts of them adopted to the SMART and IPA specifications.
 
-### Notable SMART Implementations in Finland
+### Notable SMART Implementations in other Nordic countries
 
-Both HL7 FHIR and the SMART App Launch mechanism are used in Finland by many implementations.
+See the Finnish progress on [https://hl7.fi/fhir/finnish-smart/#notable-smart-implementations-in-finland]
 
-[Apotti](https://www.apotti.fi/) is a sizeable Epic installation in Finland.
-[Epic](https://www.epic.com) is one of the biggest electronic health record system vendors
-globally. SMART App Launch is the primary mechanism through which third-party apps SHOULD be
-integrated with Apotti. See also the
-[Apotti Ecosystem](https://www.apotti.fi/en/the-apotti-ecosystem/).
-
-The [Esko APTJ](https://eskosystems.fi/tuoteperhe/integraatiot/) by Esko Systems is one of the
-prominent Finnish electronic health record systems. It uses both HL7 FHIR APIs and the SMART
-specification for internal communication between the components of the system. Esko also offers a
-SMART App Launch method to interact with third party systems.
-
-The [Kanta PHR](https://www.kanta.fi/phr) is a personal health record platform for storing and
-exchanging health and wellbeing data produced and governed by citizens. It uses a security
-mechanism that is pretty close to SMART App Launch, but with some subtle differences.
-
-[Health Village](http://healthvillage.fi) is a publicly funded group of services. It has
-built in HL7 [SMART App Launch](https://www.hl7.org/fhir/smart-app-launch/) capability for
-interacting with third party apps. 
-
-[InterSystems Finland](https://www.intersystems.com/fi/) has built an adapter through which
-existing CCOW based systems can launch SMART apps. The adapter has been used at least by
-[Vitec Acute](https://www.vitec-acute.com/) and
-[Lifecare](https://www.tietoevry.com/en/care/healthcare/) EHRs.
-
-Furthermore, both the [FHIR Demo 2022](https://fhir.fi/en/demo2022/index.html) and the 
-[FHIR Demo 2023](https://fhir.fi/en/demo2023/index.html) showcases presented numerous integrations
-implemented between FHIR servers and apps, all based on HL7 FHIR and most utilizing the SMART
-specification.
-
-Even those showcases did not cover the full extent to which the HL7 FHIR and the SMART App Launch
-specifications are being used in Finland. There's a lot going on!
-
-To learn about the current status, please contact [HL7 Finland](https://www.hl7.fi/). We're happy
+To learn about the current status in Denmark, please contact [HL7 Denmark](https://www.hl7.dk/). We're happy
 to give you an overview.
 
 ### Profiling Approach
@@ -104,40 +74,27 @@ comprehensive specification on which to build implementations.
 
 ### Governance
 
-The profiling work is performed in a project driven by [HL7 Finland](https://www.hl7.fi).
+The profiling work is performed in a project driven by [HL7 Denmark](https://www.hl7.dk).
 See the
-[announcement](https://www.hl7.fi/hl7-fhir-profilointityo-kaynnistyy-tule-mukaan-vaikuttamaan-kansalliseen-tekemiseen/)
-(in Finnish), the
-[running memo](https://docs.google.com/document/d/1yNq6XMLhWJqi6OELQtWC1DFwdtD9CQulzVOfz-zZCko/edit#),
-and [some more details](https://fhir.fi). We warmly welcome new participants to the project. You may
-even be compensated for your efforts.
+[announcement](https://confluence.hl7.org/display/HD/DK+IPA+SIG) and the
+[running european memo](https://docs.google.com/document/d/1K0_0gDacXwYJxYd3vnI9IvD4ug2JssALiOAln14hZGo/edit?usp=sharing). We warmly welcome new participants to the project.
 
 The team involved in creating the first version of the implementation guide includes
-* Arto Huusko, CGI Oyj
-* Janne Heikkinen, BCB Medical Oy
-* Jari Kariniemi, Kymenlaakson hyvinvointialue
-* Jari Vuonos, Apotti Oy
-* Joni Hirviniemi, Fujitsu
-* Jyrki Soikkeli, Apotti Oy
-* Kalle Moilanen, Esko Systems Oy
-* Marko Kaukonen, BCB Medical Oy
-* Markus Lind, Buddy Healthcare Oy
-* Markus Suonpää, CGI Finland Oyj
-* Mika Jylhä, Esko Systems Oy
-* Mika Lentovaara, HUS
-* Mika Tuomainen, Kela
-* Mikael Rinnetmäki, Sensotrend Oy
-* Tero Pekkola, Esko Systems Oy
+* Jens Kristian Villadsen, Triork
+* Christian Gasser, Lakeside
+* Ole Vilstrup, MedCom
+* Michael Johansen, MedCom
+* Asger Halkier, Sundhedsdatastyrelsen
 
 Each published major version of this implementation guide goes through the ballot and voting
-processes of HL7 Finland.
+processes of HL7 Denmark.
 
 ### Collaboration
 
 We want this implementation guide to be useful for you.
 
 If you are implementing SMART App launch in a system or application that is meant to be used in
-Finland and are thinking of some implementation details, you are probably in the right place and
+Denmark and are thinking of some implementation details, you are probably in the right place and
 this implementation guide should help you with those questions. If this implementation guide in any
 way fails to give you the answers you are looking for, we'd love to hear about it so we can make it
 better. Please do be in touch in one of the ways listed below.
@@ -145,7 +102,7 @@ better. Please do be in touch in one of the ways listed below.
 #### Open an Issue in GitHub
 
 The source code of this implementation guide is maintained in a
-[publicly accessible repository](https://github.com/fhir-fi/finnish-base-profiles) in GitHub.
+[publicly accessible repository](https://github.com/hl7dk/dk-smart) in GitHub.
 Issues opened in that GitHub repo are very welcome. They help the team pick up any proposed changes
 or additions and to discuss them publicly.
 
@@ -159,7 +116,7 @@ a great deal.
 
 Please also consider joining the development effort. This is the best way to affect the outcome of
 the profiling work. You may even be compensated for your efforts. Please be in touch with HL7
-Finland to discuss options, if this even remotely interesting for you.
+Denmark to discuss options, if this even remotely interesting for you.
 
 The best implementation guide is the one that reflects the views and the consensus of the whole
 FHIR community!

@@ -1,13 +1,13 @@
-Instance: FiSmartServer
+Instance: DKSmartServer
 InstanceOf: CapabilityStatement
-Title: "Finnish SMART Server Capability Statement"
+Title: "Danish SMART Server Capability Statement"
 Usage: #definition
-* id = "fi-smart-server"
+* id = "dk-smart-server"
 * status = #active
 * date = "2023-11-09"
-* description = "This CapabilityStatement describes the basic rules for a server actor providing SMART App Launch in Finland."
+* description = "This CapabilityStatement describes the basic rules for a server actor providing SMART App Launch in Denmark."
 * kind = #requirements
-* name = "FiSmartServer"
+* name = "DKSmartServer"
 * fhirVersion = #4.0.1
 * format[0] = #json
 * format[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
