@@ -6,7 +6,7 @@ This repo contains the source code for the Danish implementation guide for [SMAR
 
 The implementation guide is being created in a project driven by [HL7 Denmark](https://www.hl7.dk).
 See the [group activites](https://confluence.hl7.org/display/HD/DK+IPA+SIG) and 
-the more general european [running memo](https://docs.google.com/document/d/1K0_0gDacXwYJxYd3vnI9IvD4ug2JssALiOAln14hZGo/edit?usp=sharing)
+the more general european [running memo](https://docs.google.com/document/d/1K0_0gDacXwYJxYd3vnI9IvD4ug2JssALiOAln14hZGo/edit?usp=sharing) description.
 
 ## Companion Specifications
 
