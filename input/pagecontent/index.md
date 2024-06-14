@@ -80,7 +80,7 @@ See the
 [running european memo](https://docs.google.com/document/d/1K0_0gDacXwYJxYd3vnI9IvD4ug2JssALiOAln14hZGo/edit?usp=sharing). We warmly welcome new participants to the project.
 
 The team involved in creating the first version of the implementation guide includes
-* Jens Kristian Villadsen, Triork
+* Jens Kristian Villadsen, Trifork
 * Christian Gasser, Lakeside
 * Ole Vilstrup, MedCom
 * Michael Johansen, MedCom
