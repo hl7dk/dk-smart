@@ -12,3 +12,7 @@ the more general european [running memo](https://docs.google.com/document/d/1K0_
 ## Companion Specifications
 
 See also the repo for [Danish Core FHIR Profiles](https://github.com/hl7dk/dk-core).
+
+
+## Notes
+This is how the use of SMART is stated in Finland: https://www.hl7.fi/uudet-hl7-fhir-soveltamisoppaat-tukevat-terveydenhuollon-digitalisaatiota/
