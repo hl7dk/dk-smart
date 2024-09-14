@@ -47,7 +47,7 @@ So, when we pair [DK Core](https://hl7.dk/fhir/core) (with the danish models) an
 
 ### Notable SMART Implementations in other Nordic countries
 
-See the Finnish progress on [https://hl7.fi/fhir/finnish-smart/#notable-smart-implementations-in-finland]
+See the Finnish progress [here](https://hl7.fi/fhir/finnish-smart/#notable-smart-implementations-in-finland)
 
 To learn about the current status in Denmark, please contact [HL7 Denmark](https://www.hl7.dk/). We're happy to give you an overview.
 
@@ -73,6 +73,16 @@ The team involved in creating the first version of the implementation guide incl
 * Asger Halkier, Sundhedsdatastyrelsen
 
 Each published major version of this implementation guide goes through the ballot and voting processes of HL7 Denmark.
+
+### Danish Specific Considerations
+The following sub sections will list recommendations when using SMART in a Danish setting
+
+#### Encryption keys
+It is discouraged to use symmetric encryption keys as listed on https://hl7.org/fhir/smart-app-launch/client-confidential-symmetric.html and should be avoided.
+
+#### MinLog
+Any vendor providing access to data (not limited to, but including using [SMART](https://www.hl7.org/fhir/smart-app-launch/)) MUST remember to consider when the log entries of such provided data are subject to be forwarded to [MinLog](https://www.nspop.dk/display/public/web/MinLog2+-+Min+Log+Registrering+-+Guide+til+anvendere). 
+
 
 ### Collaboration
 
