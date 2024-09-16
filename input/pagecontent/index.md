@@ -30,14 +30,14 @@ The [SMART](https://www.hl7.org/fhir/smart-app-launch/) App Launch specification
 [International Patient Access (IPA) specification ](https://hl7.org/fhir/uv/ipa/) adds some more constraints and details to it. Do we
 really need something more?
 
-We have found out that there are still some places in both of these specifications that allow some implementation feedom but may be tricky for app developers to support. In this implementation guide, we aim to provide clarity on topics like how an app best learns the organization or organization unit the practitioner launching the app works for (when launching the app).
+We have found out that there are still some places in both of these specifications that allow some implementation freedom but may be tricky for app developers to support. In this implementation guide, we aim to provide clarity on topics like how an app best learns the organization or organization unit the practitioner launching the app works for (when launching the app).
 
 We believe we can get some of these details sorted out more efficiently in the local Danish context. We still aim to feed our learnings and developments with the wider [SMART](https://www.hl7.org/fhir/smart-app-launch/) community and help get parts of them adopted to the SMART and [IPA](https://hl7.org/fhir/uv/ipa/) specifications.
 
 ### I still don't follow - why do we need this?
 Okay, a simplified take on it is like this:
 
- * We have [DK Core](https://hl7.dk/fhir/core) (we all know and love). That defines the FHIR models in a danish perspective
+ * We have [DK Core](https://hl7.dk/fhir/core). That defines the FHIR models in a danish perspective
  * We have [SMART](https://www.hl7.org/fhir/smart-app-launch/) that defines a standardised login flow to a system (for obtaining access to patient data from e.g. either a clinician or a patient from an app or another clinical system)
  * We have [IPA](https://hl7.org/fhir/uv/ipa/) which is bare minimum profiling on top of the regular FHIR model + the added use of [SMART](https://www.hl7.org/fhir/smart-app-launch/)
  * We have support of the *[IPA](https://hl7.org/fhir/uv/ipa/) model parts* in [DK Core](https://hl7.dk/fhir/core) (from v3.3.0) but deliberatly not the [SMART](https://www.hl7.org/fhir/smart-app-launch/) parts in [DK Core](https://hl7.dk/fhir/core).
@@ -81,7 +81,7 @@ The following sub sections will list recommendations when using SMART in a Danis
 It is discouraged to use symmetric encryption keys as listed on https://hl7.org/fhir/smart-app-launch/client-confidential-symmetric.html and should be avoided.
 
 #### MinLog
-Any vendor providing access to data (not limited to, but including using [SMART](https://www.hl7.org/fhir/smart-app-launch/)) MUST remember to consider when the log entries of such provided data are subject to be forwarded to [MinLog](https://www.nspop.dk/display/public/web/MinLog2+-+Min+Log+Registrering+-+Guide+til+anvendere). 
+Any vendor providing access to data (not limited to, but including using [SMART](https://www.hl7.org/fhir/smart-app-launch/)) MUST remember that access to such provided data in many cases are subject to be sent to [MinLog](https://www.nspop.dk/display/public/web/MinLog2+-+Min+Log+Registrering). 
 
 
 ### Collaboration
