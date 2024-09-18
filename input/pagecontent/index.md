@@ -77,8 +77,8 @@ Each published major version of this implementation guide goes through the ballo
 ### Danish Specific Considerations
 The following sub sections will list recommendations when using SMART in a Danish setting
 
-#### Encryption keys
-It is discouraged to use symmetric encryption keys as listed on https://hl7.org/fhir/smart-app-launch/client-confidential-symmetric.html and should be avoided.
+#### Client authentication
+It is discouraged to use symmetric authentication (client_secret) for clients that cannot maintain a secret as listed [here](https://hl7.org/fhir/smart-app-launch/client-confidential-symmetric.html) and hence should be avoided.
 
 #### MinLog
 Any vendor providing access to data (not limited to, but including using [SMART](https://www.hl7.org/fhir/smart-app-launch/)) MUST remember that access to such provided data in many cases are subject to be sent to [MinLog](https://www.nspop.dk/display/public/web/MinLog2+-+Min+Log+Registrering). 
