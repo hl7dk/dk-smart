@@ -45,6 +45,9 @@ Okay, a simplified take on it is like this:
  
 So, when we pair [DK Core](https://hl7.dk/fhir/core) (with the danish models) and DK SMART (which outlines standardised access) we end up with a standardised way of expressing the data model and the data access which is the core essense of bridging systems and break down silos. This inherently supports initiatives like https://medcom.dk/projekter/apps-i-almen-praksis/ and boards like https://laegemiddelstyrelsen.dk/da/udstyr/naevnet-for-sundhedsapps/
 
+### What about existing national login solutions?
+National existing solutions like [MitID](https://www.mitid.dk/) and [SEB](https://services.nsi.dk/seb) as well as any local [SAML-based](https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language) solution can be incorporated into using [SMART](https://www.hl7.org/fhir/smart-app-launch/)-flows for the authentication/authorization-parts adding value to the entire chain. The use of [SMART](https://www.hl7.org/fhir/smart-app-launch/) does not compromise that. It only strengthens is.
+
 ### Notable SMART Implementations in other Nordic countries
 
 See the Finnish progress [here](https://hl7.fi/fhir/finnish-smart/#notable-smart-implementations-in-finland)
