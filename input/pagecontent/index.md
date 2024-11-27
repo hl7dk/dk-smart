@@ -40,7 +40,7 @@ Okay, a simplified take on it is like this:
  * We have [DK Core](https://hl7.dk/fhir/core). That defines the FHIR models in a danish perspective
  * We have [SMART](https://www.hl7.org/fhir/smart-app-launch/) that defines a standardised login flow to a system (for obtaining access to patient data from e.g. either a clinician or a patient from an app or another clinical system)
  * We have [IPA](https://hl7.org/fhir/uv/ipa/) which is bare minimum profiling on top of the regular FHIR model + the added use of [SMART](https://www.hl7.org/fhir/smart-app-launch/)
- * We have support of the *[IPA](https://hl7.org/fhir/uv/ipa/) model parts* in [DK Core](https://hl7.dk/fhir/core) (from v3.3.0) but deliberatly not the [SMART](https://www.hl7.org/fhir/smart-app-launch/) parts in [DK Core](https://hl7.dk/fhir/core).
+ * We have support of the *[IPA](https://hl7.org/fhir/uv/ipa/) model parts* in [DK Core](https://hl7.dk/fhir/core) (from v3.4.0) but deliberatly not the [SMART](https://www.hl7.org/fhir/smart-app-launch/) parts in [DK Core](https://hl7.dk/fhir/core).
  * **We now have DK SMART** (this IG) to frame how SMART can be used in Denmark. Its mostly guidelines as [SMART](https://www.hl7.org/fhir/smart-app-launch/) is pretty welldefined in itself
  
 So, when we pair [DK Core](https://hl7.dk/fhir/core) (with the danish models) and DK SMART (which outlines standardised access) we end up with a standardised way of expressing the data model and the data access which is the core essense of bridging systems and break down silos. This inherently supports initiatives like [https://medcom.dk/projekter/apps-i-almen-praksis/](https://medcom.dk/projekter/apps-i-almen-praksis/) and boards like [https://laegemiddelstyrelsen.dk/da/udstyr/naevnet-for-sundhedsapps/](https://laegemiddelstyrelsen.dk/da/udstyr/naevnet-for-sundhedsapps/)
@@ -74,6 +74,7 @@ The team involved in creating the first version of the implementation guide incl
 * Ole Vilstrup, MedCom
 * Michael Johansen, MedCom
 * Asger Halkier, Sundhedsdatastyrelsen
+* ... and others
 
 Each published major version of this implementation guide goes through the ballot and voting processes of HL7 Denmark.
 
