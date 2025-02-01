@@ -1,0 +1,1 @@
+Dk-smart version 1.0.0 has been approved by HL7 Denmark. This version introduces the first version of DK SMART.
