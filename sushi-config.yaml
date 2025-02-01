@@ -3,11 +3,8 @@ canonical: http://hl7.dk/fhir/smart
 name: DKSmart
 title: Danish Implementation Guide for SMART App Launch 
 description: Guidelines for using the SMART App Launch mechanism in Denmark.
-status: active # draft | active | retired | unknown
-version: 1.0.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
-releaseLabel: trial-use # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: urn:iso:std:iso:3166#DK "Denmark" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
@@ -46,3 +43,16 @@ menu:
   Examples: examples.html
   Artifacts: artifacts.html
   Downloads: downloads.html
+
+
+# ╭────────────────────────────────────────────releasing───────────────────────────────────────────╮
+# │  Variables for release control                                                                 │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+version: 1.0.0
+#Flip status to 'active' for publication. Flip to 'draft' for CI
+#status: draft
+status: active
+#Flip releaseLabel to 'release' for publication. Flip to 'ci-build' for CI
+#releaseLabel: ci-build
+releaseLabel: trial-use
