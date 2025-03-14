@@ -4,7 +4,7 @@
   "sequence": "Release",
   "mode": "milestone",
   "descmd": "@release-notes.md",
-  "first": true,
+  "first": false,
   
   
   "version": "1.1.0",
